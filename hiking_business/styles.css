@@ -1,0 +1,234 @@
+body {
+    font-family: Kanit, sans-serif;
+    font-size: 18px;
+    margin: 0;
+    color: black;
+    display: block;
+}
+
+/* header */
+header {
+    position: fixed;
+    display: block;
+    width: 100%;
+    top: 0;
+    z-index: 10;
+    align-items: center;
+    justify-items: center;
+    height: 4rem;
+    background-color: darkslategrey;
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,.2);
+}
+
+header ul {
+    width: fit-content;
+    height: fit-content;
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    margin: 1rem auto;
+}
+
+header a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.3rem;
+    margin: 0 0.5rem;
+}
+
+header a:hover {
+    color: darkgray;
+    text-decoration: underline;
+}
+
+h1 {
+    font-size: 8rem;
+    color: white;
+    margin-block-start: 0;
+    margin-block-end: 0;
+}
+
+h2 {
+    font-size: 3rem;
+    margin-block-start: 0;
+    margin-block-end: 0;
+}
+
+h3 {
+    font-size: 2rem;
+    font-weight: 300;
+    margin-block-start: 0;
+    margin-block-end: 0;
+}
+
+p {
+    font-size: 1.5rem;
+}
+
+main {
+    width: 100%;
+}
+
+/* welcome */
+#welcome {
+    background-image: url(./images/dami-adebayo-l6Mu5Ux7alg-unsplash.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 60rem;
+    display: block;
+    justify-items: center;
+    text-align: center;
+    color: white;
+}
+
+#welcome .main-text {
+    margin: 0 auto;
+    padding-top: 20rem;
+    display: block;
+    height: fit-content;
+    width: fit-content;
+}
+
+/* mission */
+#mission {
+    display: block;
+    height: 20rem;
+}
+
+#mission .block {
+    display: flex;
+    flex-direction: row;
+    margin: 4rem auto;
+}
+
+#mission .title {
+    text-align: right;
+    padding-right: 1rem;
+    flex: 30%;
+}
+
+#mission .description {
+    text-align: left;
+    flex: 70%;
+}
+
+/* hikes */
+#hikes {
+    background-color: darkslategrey;
+    display: block;
+    height: 40rem;
+    align-content: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    padding-top: 3rem;
+}
+
+.hike-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 5rem auto;
+}
+
+.hike-list img {
+    box-sizing: border-box;
+    max-width: 24vw;
+    min-width: 300px;
+    border: 5px solid white;
+}
+
+@media only screen and (max-width: 1000px) {
+    #mission {
+        height: 30rem;
+    }
+    #mission .block {
+        flex-direction: column;
+    }
+
+    #mission .title {
+        text-align: center;
+        flex: 100%;
+    }
+    
+    #mission .description {
+        text-align: center;
+        flex: 100%;
+    }
+    #hikes {
+        align-content: space-between;
+        height: 70rem;
+    }
+    .hike-list {
+        margin: 1rem auto;
+        display: flex;
+        flex-direction: column; 
+    }
+    .hike-list img {
+        margin: 2rem;
+    }
+}
+/* team */
+#team {
+    display: block;
+    height: 40rem;
+    align-content: center;
+    justify-content: center;
+    text-align: center;
+    padding-top: 3rem;
+}
+
+.member-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 5rem auto;
+}
+
+.member-list img {
+    max-width: 20vw;
+    min-width: 150px;
+    border-radius: 50%;
+}
+@media only screen and (max-width: 750px) {
+    h1 {
+        font-size: 6rem;
+    }
+    
+    h2 {
+        font-size: 2.25rem;
+    }
+    
+    h3 {
+        font-size: 1.5rem;
+    }
+    
+    p {
+        font-size: 1.3rem;
+    }
+    #welcome {
+        height: 50rem;
+    }
+    #mission {
+        height: 23rem;
+    }
+    
+    #mission .block {
+        margin: 1rem auto;
+    }
+    #mission .description {
+        padding: 1rem;
+    }
+    .member-list {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        margin: 5rem auto;
+    }
+}
+/* footer */
+footer {
+    height: 5rem;
+    background-color: dimgrey;
+}
